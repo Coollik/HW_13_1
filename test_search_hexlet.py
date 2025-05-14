@@ -1,6 +1,5 @@
 from selene import browser, be, have
 
-#Для проверкипше
 def test_find_hexlet():
     browser.open('https://duckduckgo.com')
     browser.element('[name="q"]').should(be.blank).type('hexlet').press_enter()
